@@ -1,0 +1,5 @@
+:root {
+    --shadow-sm: 5px 5px 2px -5px var(--foreground-color);
+    --shadow-md: 5px 5px 5px -5px var(--foreground-color);
+    --shadow-lg: 5px 5px 8px -5px var(--foreground-color);
+}
