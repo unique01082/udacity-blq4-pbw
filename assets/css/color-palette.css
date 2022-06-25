@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #f66b0e;
-    --secondary-color: #205375;
-    --foreground-color: #112b3c;
-    --background-color: #efefef;
-    --dimmed-primary-color: calc(var(--primary-color));
-    --dimmed-secondary-color: calc(var(--secondary-color));
-    --dimmed-foreground-color: calc(var(--foreground-color));
-    --dimmed-background-color: calc(var(--primary-background-color));
+  --primary-color: #d5fffd;
+  --secondary-color: #205375;
+  --foreground-color: #112b3c;
+  --background-color: #efefef;
+  --dimmed-primary-color: calc(var(--primary-color));
+  --dimmed-secondary-color: calc(var(--secondary-color));
+  --dimmed-foreground-color: calc(var(--foreground-color));
+  --dimmed-background-color: calc(var(--primary-background-color));
 }

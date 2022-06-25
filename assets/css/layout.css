@@ -1,55 +1,100 @@
 #container {
-    min-height: 100vh;
-    width: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 48px 1fr 32px;
-    grid-template-areas: "header header header" "navbar main aside" "footer footer footer";
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 48px 1fr;
+  grid-template-areas: "header header" "navbar main" "footer footer";
+}
+
+#container > * {
+  padding: var(--spacing-lg);
 }
 
 #header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar {
-    grid-area: navbar;
+  grid-area: navbar;
 }
 
 #content {
-    grid-area: main;
+  grid-area: main;
 }
 
 #aside {
-    grid-area: aside;
+  grid-area: aside;
 }
 
 #footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .post-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: var(--spacing-sm);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--spacing-lg);
 }
 
 .post-entry {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 200px 2fr 1fr;
+  background: var(--background-color) "22";
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  border: 1px solid var(--foreground-color) "55";
+  padding: 8px;
 }
 
-.post-entry .post-thumbnail {
-    object-fit: contain;
+.post-thumbnail {
+  display: contents;
+}
+
+.post-thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  line-height: 1.5rem;
+  background: var(--primary-color);
+}
+
+.post-author {
+  background: var(--background-color) "22";
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  border: 1px solid var(--foreground-color) "55";
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 150px;
+  height: 150px;
 }
