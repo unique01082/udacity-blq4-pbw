@@ -79,6 +79,9 @@
 .post-title {
   line-height: 1.5rem;
   background: var(--primary-color);
+  border-radius: 5px;
+  padding: 0px 8px;
+  font-size: 1.25rem;
 }
 
 .post-author {
