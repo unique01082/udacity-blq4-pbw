@@ -1,11 +1,33 @@
-/* @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css); */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url(./font-awesome/all.min.css);
 @import url(./layout.css);
 @import url(./color-palette.css);
 @import url(./spacing.css);
 @import url(./shadow.css);
 @import url(./typography.css);
+
+@font-face {
+  font-family: "Bellota Text";
+  src: url(../font/BellotaText-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bellota Text";
+  src: url(../font/BellotaText-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bellota Text";
+  src: url(../font/BellotaText-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bellota Text";
+  src: url(../font/BellotaText-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
   font-size: var(--text-size-base);
   font-family: "Bellota Text", cursive;
