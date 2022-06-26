@@ -29,6 +29,12 @@
   line-height: calc(var(--text-size-md) + var(--spacing-sm));
 }
 
+.post-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .author-name {
   font-size: var(--text-size-lg);
   font-weight: 700;
